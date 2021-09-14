@@ -1,0 +1,22 @@
+@font-face {
+    font-family: ocr;
+    src: url(font/LazenbyCompLiquid.ttf)
+}
+
+.head {
+    height: 220px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    background-color: navy;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 52pt;
+    font-family: ocr, monospace;
+}
