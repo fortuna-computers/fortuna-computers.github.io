@@ -40,6 +40,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
+a:visited {
+    color: blue;
+}
 
 .head {
     height: 220px;
@@ -48,7 +51,7 @@ a:hover {
     align-items: center;
     text-align: center;
 
-    background-color: navy;
+    background-color: darkslateblue;
     color: white;
 
     margin-bottom: 32px;
@@ -109,10 +112,11 @@ a:hover {
     display: flex;
     gap: 12px;
     padding-top: 12px;
+    flex-wrap: wrap;
 }
 
-.links a:not(:last-of-type)::after {
-    display: inline-block;
-    padding-left: 12px;
-    content: "•";
+.link {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
 }
