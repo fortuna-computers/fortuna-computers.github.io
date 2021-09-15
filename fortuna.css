@@ -5,6 +5,30 @@
     src: url(font/LazenbyCompLiquid.ttf)
 }
 
+@media screen and (max-width: 416px) {
+    html {
+        font-size: 12pt !important;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .links {
+        flex-direction: column;
+    }
+    .links a:after {
+        content: "" !important;
+    }
+    .head {
+        height: 160px !important;
+    }
+    .head-title {
+        font-size: 32pt !important;
+    }
+    .image {
+        margin-left: revert !important;
+    }
+}
+
 html {
     font-family: 'Roboto Slab', serif;
     font-size: 14pt;
@@ -30,7 +54,7 @@ a:hover {
     margin-bottom: 32px;
 }
 
-h1 {
+.head-title {
     text-align: center;
     width: 100%;
     font-size: 52pt;
@@ -55,10 +79,12 @@ h1 {
     display: flex;
     flex-direction: column;
     padding: 32px;
+    margin-bottom: 36px;
 }
 
 .row {
     display: flex;
+    justify-content: space-around;
 }
 
 .title {
@@ -68,12 +94,15 @@ h1 {
 
 .image {
     width: 700px;
-    padding-left: 24px;
+    margin-left: 24px;
 }
 
 .image img {
     width: 100%;
     height: auto;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    border-radius: .3rem;
+    border: 1px solid #dee2e6;
 }
 
 .links {
