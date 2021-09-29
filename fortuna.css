@@ -90,6 +90,7 @@ a:visited {
 .row {
     display: flex;
     justify-content: space-around;
+    align-items: stretch;
 }
 
 .title {
@@ -126,4 +127,22 @@ a:visited {
     display: flex;
     flex-wrap: nowrap;
     gap: 6px;
+}
+
+img.arrow {
+    width: 28px;
+}
+
+.arrow-left {
+    position: relative;
+    left: 28px;
+    align-self: center;
+    width: 0;
+}
+
+.arrow-right {
+    position: relative;
+    left: -28px;
+    align-self: center;
+    width: 0;
 }
