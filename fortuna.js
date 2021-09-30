@@ -1,4 +1,5 @@
 // TODO - make arrows work (ok)
+// TODO - improve arrow appearance
 // TODO - arrows in mobile
 // TODO - show image in full screen
 // TODO - publish and calculate lighthouse

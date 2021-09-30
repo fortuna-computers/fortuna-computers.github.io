@@ -24,7 +24,7 @@
     .head-title {
         font-size: 32pt !important;
     }
-    .image {
+    .photos {
         margin-left: revert !important;
     }
 }
@@ -102,10 +102,15 @@ a:visited {
     flex: 1;
 }
 
-.image {
-    margin-left: 24px;
+.photos {
+    display: flex;
     flex: 1;
     align-self: center;
+    margin-left: 24px;
+}
+
+.image {
+    flex: 1;
 }
 
 .image img {
@@ -133,20 +138,17 @@ img.arrow {
     width: 28px;
 }
 
-.arrow-left {
+div.arrow {
     position: relative;
-    left: 28px;
     align-self: center;
     width: 0;
     display: none;
     cursor: pointer;
 }
 
+.arrow-left {
+}
+
 .arrow-right {
-    position: relative;
     left: -28px;
-    align-self: center;
-    width: 0;
-    display: none;
-    cursor: pointer;
 }
