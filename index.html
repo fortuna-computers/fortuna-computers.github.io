@@ -13,11 +13,8 @@
     <meta property="og:description" content="Fortuna Computers: a set of DIY Z80 computers, along with their operating system.">
     <meta property="og:image" content="photos/terminal.jpg">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 
     <link rel="stylesheet" href="fortuna.css">
 
@@ -55,6 +52,7 @@
                         <img src="photos/fortuna-2/closed.jpg" alt="The computer, closed" loading="lazy">
                         <img src="photos/fortuna-2/fortuna-2.jpg" alt="The computer, open" loading="lazy" style="display: none;">
                         <img src="photos/fortuna-2/naked.jpg" alt="The computer, naked" loading="lazy" style="display: none;">
+                        <img src="photos/fortuna-2/computer.jpg" alt="The computer, mounted" loading="lazy" style="display: none;">
                     </div>
                     <div class="arrow arrow-right"><img class="arrow" src="icons/arrow-right-circle-fill.svg" alt="Next photo"></div>
                 </div>
@@ -93,10 +91,13 @@
                         </ul>
                     </div>
                 </div>
-                <div class="image">
-                    <a href="photos/emulator/emulator.jpg" target="_blank">
-                        <img src="photos/emulator/emulator.jpg" alt="The emulator">
-                    </a>
+                <div class="photos">
+                    <div class="arrow arrow-left"><img class="arrow" src="icons/arrow-left-circle-fill.svg" alt="Previous photo"></div>
+                    <div class="image" id="emulator">
+                        <img src="photos/emulator/emulator.jpg" alt="Emulator" loading="lazy">
+                        <img src="photos/emulator/emulator2.jpg" alt="Emulator" loading="lazy" style="display: none;">
+                    </div>
+                    <div class="arrow arrow-right"><img class="arrow" src="icons/arrow-right-circle-fill.svg" alt="Next photo"></div>
                 </div>
             </div>
             <div class="links">
@@ -120,16 +121,21 @@
                         <ul>
                             <li>PS/2 keyboard input</li>
                             <li>VGA output</li>
-                            <li>Uses two ATMEGA-328P, one to receive keypresses and the other one to generate the video</li>
+                            <li>Uses a ATTINY2313 one to receive keypresses and a AATMEGA328P to generate the video</li>
                             <li>Once it's ready, it will fit into an Altoids tin</li>
                             <li>Based on the <a href="https://github.com/slu4coder/Minimal-Terminal">Minimal-Terminal</a> project</li>
                         </ul>
                     </div>
                 </div>
-                <div class="image">
-                    <a href="photos/fortuna-terminal/fortuna-terminal.jpg" target="_blank">
-                        <img src="photos/fortuna-terminal/fortuna-terminal.jpg" alt="The project">
-                    </a>
+                <div class="photos">
+                    <div class="arrow arrow-left"><img class="arrow" src="icons/arrow-left-circle-fill.svg" alt="Previous photo"></div>
+                    <div class="image" id="fortuna_terminal">
+                        <img src="photos/fortuna-terminal/terminal.jpg" alt="Terminal running on VGA" loading="lazy">
+                        <img src="photos/fortuna-terminal/boards.jpg" alt="Boards ready for assembly" loading="lazy" style="display: none;">
+                        <img src="photos/fortuna-terminal/fortuna-terminal.jpg" alt="Prototyping" loading="lazy" style="display: none;">
+                        <img src="photos/fortuna-terminal/pinout.jpg" alt="Pinout" loading="lazy" style="display: none;">
+                    </div>
+                    <div class="arrow arrow-right"><img class="arrow" src="icons/arrow-right-circle-fill.svg" alt="Next photo"></div>
                 </div>
             </div>
             <div class="links">
@@ -165,10 +171,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="image">
-                    <a href="photos/fortuna-3/fortuna3-ideas.jpg" target="_blank">
-                        <img src="photos/fortuna-3/fortuna3-ideas.jpg" alt="The computer">
-                    </a>
+                <div class="photos">
+                    <div class="arrow arrow-left"><img class="arrow" src="icons/arrow-left-circle-fill.svg" alt="Previous photo"></div>
+                    <div class="image" id="fortuna3">
+                        <img src="photos/fortuna-3/fortuna3-ideas.jpg" alt="The computer" loading="lazy">
+                    </div>
+                    <div class="arrow arrow-right"><img class="arrow" src="icons/arrow-right-circle-fill.svg" alt="Next photo"></div>
                 </div>
             </div>
             <div class="links">
@@ -200,8 +208,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="image">
-                    <img src="photos/fortuna-os/z80.jpg" alt="The project">
+                <div class="photos">
+                    <div class="arrow arrow-left"><img class="arrow" src="icons/arrow-left-circle-fill.svg" alt="Previous photo"></div>
+                    <div class="image" id="fortuna_3">
+                        <img src="photos/fortuna-os/z80.jpg" alt="A Z80" loading="lazy">
+                    </div>
+                    <div class="arrow arrow-right"><img class="arrow" src="icons/arrow-right-circle-fill.svg" alt="Next photo"></div>
                 </div>
             </div>
             <div class="links">
@@ -238,10 +250,12 @@
                             <a href="#fortuna-2">much simpler alternative</a>.</p>
                     </div>
                 </div>
-                <div class="image">
-                    <a href="photos/fortuna-1/fortuna-1.jpg" target="_blank">
-                        <img src="photos/fortuna-1/fortuna-1.jpg" alt="The project">
-                    </a>
+                <div class="photos">
+                    <div class="arrow arrow-left"><img class="arrow" src="icons/arrow-left-circle-fill.svg" alt="Previous photo"></div>
+                    <div class="image" id="fortuna_1">
+                        <img src="photos/fortuna-1/fortuna-1.jpg" alt="A Z80" loading="lazy">
+                    </div>
+                    <div class="arrow arrow-right"><img class="arrow" src="icons/arrow-right-circle-fill.svg" alt="Next photo"></div>
                 </div>
             </div>
             <div class="links">
@@ -253,6 +267,9 @@
         </div>
 
     </div>
+
+    <div id="full-image-background" class="full-image-background"></div>
+    <img id="full-image" class="full-image" src="photos/fortuna-2/closed.jpg" alt="Full image" loading="lazy">
 
     <!--<div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
 
