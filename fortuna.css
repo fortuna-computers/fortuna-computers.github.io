@@ -31,7 +31,7 @@
 
 html {
     font-family: 'Roboto Slab', serif;
-    font-size: 14pt;
+    font-size: 13pt;
 }
 
 a {
@@ -62,7 +62,7 @@ a:visited {
 .head-title {
     text-align: center;
     width: 100%;
-    font-size: 52pt;
+    font-size: 46pt;
     font-family: ocr, monospace;
 }
 
@@ -94,7 +94,7 @@ a:visited {
 }
 
 .title {
-    font-size: xx-large;
+    font-size: 22pt;
     padding-bottom: 16px;
 }
 
@@ -138,6 +138,8 @@ img.arrow {
     left: 28px;
     align-self: center;
     width: 0;
+    display: none;
+    cursor: pointer;
 }
 
 .arrow-right {
@@ -145,4 +147,6 @@ img.arrow {
     left: -28px;
     align-self: center;
     width: 0;
+    display: none;
+    cursor: pointer;
 }
